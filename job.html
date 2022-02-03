@@ -102,13 +102,13 @@
     <span style="position: absolute;margin-top: 2%;margin-left: 3%;z-index: 100;">
       <i class="fa fa-briefcase" aria-hidden="true"></i>
   </span>
-      <select class="form-select"   placeholder="Experience" style="padding-left: 40px;">
+
+      <select id="filter-company" class="filter form-select"   placeholder="Experience" style="padding-left: 40px;">
        
-        
-        <option>Experience</option>
-        <option value="1">one year</option>
-        <option value="2">Two year</option>
-        <option value="3">Three year</option>
+        <option value="0">Experience</option>
+        <option value="one">one year</option>
+        <option value="Two">Two year</option>
+        <option value="Three">Three year</option>
       </select> 
       </div>
      
@@ -143,7 +143,7 @@
             
              
              
-              <div class="col-md-12" >
+              <div class="col-md-12  job_card" >
                 <div class="card  mt-2" style="background: rgb(230, 229, 238);" id="search-tbl">
                   <div class="card-body">
                     <div style="display: flex;flex-wrap: wrap;">
@@ -153,7 +153,7 @@
                       <div style="display: flex; flex-direction: row; margin-top: 5%;">
                          <h6 style="margin-left: 10%;"><i class="fa fa-map-marker" aria-hidden="true"></i> Dubai</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-map-marker" aria-hidden="true"></i> IT</h6>
-                         <h6 style="margin-left: 10%;"><i class="fa fa-briefcase" aria-hidden="true"></i> 2 Years</h6>
+                         <h6 style="margin-left: 10%;"  class="company"  data-company="Two"><i class="fa fa-briefcase" aria-hidden="true"></i> 2 Years</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-money" aria-hidden="true"></i>
                           1700$</h6>
                     </div>
@@ -172,7 +172,7 @@
                       <div style="display: flex; flex-direction: row; margin-top: 5%;">
                          <h6 style="margin-left: 10%;"><i class="fa fa-map-marker" aria-hidden="true"></i>Aden</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-map-marker" aria-hidden="true"></i> IT</h6>
-                         <h6 style="margin-left: 10%;"><i class="fa fa-briefcase" aria-hidden="true"></i> 2 Years</h6>
+                         <h6 style="margin-left: 10%;"  class="company"  data-company="Two"><i class="fa fa-briefcase" aria-hidden="true"></i> 2 Years</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-money" aria-hidden="true"></i>
                           5000$</h6>
                     </div>
@@ -191,7 +191,7 @@
                       <div style="display: flex; flex-direction: row; margin-top: 5%;">
                          <h6 style="margin-left: 10%;"><i class="fa fa-map-marker" aria-hidden="true"></i> Qairo</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-map-marker" aria-hidden="true"></i> Doctor</h6>
-                         <h6 style="margin-left: 10%;"><i class="fa fa-briefcase" aria-hidden="true"></i> 3 Years</h6>
+                         <h6 style="margin-left: 10%;"  class="company"  data-company="Three"><i class="fa fa-briefcase" aria-hidden="true"></i> 3Years</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-money" aria-hidden="true"></i>
                           2500$</h6>
                     </div>
@@ -210,7 +210,7 @@
                       <div style="display: flex; flex-direction: row; margin-top: 5%;">
                          <h6 style="margin-left: 10%;"><i class="fa fa-map-marker" aria-hidden="true"></i> Jeda</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-map-marker" aria-hidden="true"></i> Desginer</h6>
-                         <h6 style="margin-left: 10%;"><i class="fa fa-briefcase" aria-hidden="true"></i> 1 Years</h6>
+                         <h6 style="margin-left: 10%;"  class="company"  data-company="one"><i class="fa fa-briefcase" aria-hidden="true"></i>  1Years</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-money" aria-hidden="true"></i>
                           3000$</h6>
                     </div>
@@ -230,7 +230,7 @@
                          <h6 style="margin-left: 10%;"><i class="fa fa-map-marker" aria-hidden="true"></i> Dubai</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-id-card-o" aria-hidden="true"></i>
                          </i> Danser</h6>
-                         <h6 style="margin-left: 10%;"><i class="fa fa-briefcase" aria-hidden="true"></i> 1 Years</h6>
+                         <h6 style="margin-left: 10%;"  class="company"  data-company="one"><i class="fa fa-briefcase" aria-hidden="true"></i> 1Years</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-money" aria-hidden="true"></i>
                           2000$</h6>
                     </div>
@@ -250,7 +250,7 @@
                          <h6 style="margin-left: 10%;"><i class="fa fa-map-marker" aria-hidden="true"></i> Sana'a</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-id-card-o" aria-hidden="true"></i>
                          </i> Danser</h6>
-                         <h6 style="margin-left: 10%;"><i class="fa fa-briefcase" aria-hidden="true"></i> 1 Years</h6>
+                         <h6 style="margin-left: 10%;"  class="company"  data-company="one"><i class="fa fa-briefcase" aria-hidden="true"></i> 1 Years</h6>
                          <h6 style="margin-left: 10%;"><i class="fa fa-money" aria-hidden="true"></i>
                           2000$</h6>
                     </div>
@@ -322,6 +322,9 @@
     </footer>
     <script src="bootstrap.js"></script>
     <script src="jquery.min.js"></script>
+    <script src="./search.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 
     <script>
 
