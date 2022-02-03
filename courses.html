@@ -28,6 +28,19 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+        .dir{
+  display: flex;
+   flex-direction:column;
+}
+      }
+      @media (max-width: 500px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        .dir{
+  display: flex;
+   flex-direction:column;
+}
       }
       ///////////////
       @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
@@ -91,6 +104,10 @@ body {
 
 .stats span {
     font-size: 29px
+}
+.dir{
+  display: flex;
+   flex-direction:row;
 }
     </style>
 
@@ -235,14 +252,16 @@ body {
             </div>
           </div>
       
-          <div class="col-md-12 row ml-4 "style="display: flex; flex-direction:row" >
+          <div class="col-md-12 row ml-4 " >
             <div class=" col-md-2 card" style="width: 30%;margin-right: 2%;height: 30vh;">
              
               <div class="card-body " >
                 <h5 class="card-title">HTML</h5>
                 <p class="card-text">taiz University facualty of Engineering.</p>
                 <div class="d-flex justify-content-center mb-2">
-                  
+                  <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
+                    Add
+                  </a>
                   <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
                     Edite
                   </a>
@@ -259,7 +278,9 @@ body {
                 <h5 class="card-title">CSS</h5>
                 <p class="card-text">taiz University facualty of Engineering.</p>
                 <div class="d-flex justify-content-center mb-2">
-                  
+                  <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
+                    Add
+                  </a>
                   <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
                     Edite
                   </a>
@@ -276,7 +297,9 @@ body {
                 <h5 class="card-title">PYTHON</h5>
                 <p class="card-text">taiz University facualty of Engineering.</p>
                 <div class="d-flex justify-content-center mb-2">
-                  
+                  <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
+                    Add
+                  </a>
                   <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
                     Edite
                   </a>
@@ -289,14 +312,16 @@ body {
             </div>
             
             </div>
-            <div class="col-md-12 row ml-4 mt-5 "style="display: flex; flex-direction:row margin: 2%;" >
+            <div class="dir col-md-12 row ml-4 mt-5 "style="display: flex; flex-direction:row margin: 2%;" >
               <div class=" col-md-2 card" style="width: 30%;margin-right: 2%;height: 30vh;">
                
                 <div class="card-body " >
                   <h5 class="card-title">JavaScribt</h5>
                   <p class="card-text">taiz University facualty of Engineering.</p>
                   <div class="d-flex justify-content-center mb-2">
-                  
+                    <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
+                      Add
+                    </a>
                     <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
                       Edite
                     </a>
@@ -313,7 +338,9 @@ body {
                   <h5 class="card-title">ORACLE</h5>
                   <p class="card-text">taiz University facualty of Engineering.</p>
                   <div class="d-flex justify-content-center mb-2">
-                  
+                    <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
+                      Add
+                    </a>
                     <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
                       Edite
                     </a>
@@ -329,8 +356,18 @@ body {
                 <div class="card-body " >
                   <h5 class="card-title">PHP</h5>
                   <p class="card-text">taiz University facualty of Engineering.</p>
-                  <a href="#" class="btn btn-secondary">Edite</a>
-                  <a href="#" class="btn btn-outline-secondary">delete</a>
+                  <div class="d-flex justify-content-center mb-2">
+                    <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
+                      Add
+                    </a>
+                    <a type="button" class="btn btn-secondary me-2" href="./corses-edite.html">
+                      Edite
+                    </a>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+                      Delete
+                    </button>
+                    
+                  </div>
                 </div>
               </div>
               
